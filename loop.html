@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var n = 13;
+var flax=[];
+for(var i=n;i>0;i=i-3){
+    var img=[];
+    if(i>3){
+        var k = i;
+        for(var j=0;j<3;j++){
+            img.push(k);
+            k=k-1;
+        }
+    }else{
+         k=i;
+         for(var j=0;j<i;j++){
+            img.push(k);
+            k=k-1;
+         }
+    }
+    flax.push(img);
+}
+console.log(flax);
+
+</script>
+
+</body>
+</html>
+
